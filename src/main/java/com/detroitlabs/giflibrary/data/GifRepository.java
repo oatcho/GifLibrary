@@ -38,7 +38,7 @@ public class GifRepository {
         List<Gif> gifsPertainingToSearch = new ArrayList<>();
 
         for (Gif gif: ALL_GIFS){
-            if(gif.getName().equalsIgnoreCase(userInput)){
+            if(gif.getName().contains(userInput)){
                 gifsPertainingToSearch.add(gif);
             }
         }
